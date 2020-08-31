@@ -10,6 +10,7 @@
 #define StyleTouch_SVGStyelCatcher_h
 
 @class SVGElement;
+@class UIColor;
 
 @protocol SVGStyleCatcher <NSObject>
 
