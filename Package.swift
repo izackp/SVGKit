@@ -5,8 +5,8 @@ let package = Package(
     name: "SVGKit",
     platforms: [
         .macOS(.v10_10),
-        .iOS(.v9),
-        .tvOS(.v9)
+        .iOS(.v10),
+        .tvOS(.v10)
     ],
     products: [
         .library(
