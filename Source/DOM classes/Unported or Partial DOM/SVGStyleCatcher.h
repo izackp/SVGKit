@@ -9,6 +9,10 @@
 #ifndef StyleTouch_SVGStyelCatcher_h
 #define StyleTouch_SVGStyelCatcher_h
 
+#if TARGET_OS_IOS 
+#import <UIKit/UIKit.h>
+#endif
+
 @class SVGElement;
 @class UIColor;
 
@@ -17,7 +21,9 @@
 //-(void)styleCatchElement:(SVGElement *)styledLayer forClass:(NSString *)colorIndex;
 //-(void)styleCatchNewStyle:(NSString *)className;
 -(void)styleCatchLayer:(CALayer *)styledLayer forClass:(NSString *)colorIndex;
+#if TARGET_OS_IOS 
 -(UIColor *)styleCatchOverrideFill:(NSString *)fillClassName;
+#endif
 @end
 
 
